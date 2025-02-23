@@ -127,10 +127,10 @@ a {
 }
 
 .avatar img {
-    width: 120px;
-    height: 120px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
-    border: 3px solid #007bff;
+    border: 5px solid #0056b3;
     object-fit: cover;
 }
 
