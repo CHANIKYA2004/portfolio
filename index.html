@@ -12,110 +12,130 @@
 </head>
 
 <body>
-    <nav id="navigation-bar">
-        <div class="logo">Chanikya</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href='#about'>About</a></li>
-                <li><a href='#projects'>Projects</a></li>
-                <li><a href='#blog'>Blog</a></li>
-                <li><a href='#contact'>Contact</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Chanikya</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
             </ul>
-        </div>
-    </nav>
-    <nav id="mobile-header">
-        <div class="logo" role="banner">Chanikya</div>
-        <div class="hamburger" id="hamburger" tabindex="0">
-            &#9776;
-        </div>
-    </nav>
-    <ul class="menu" id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#projects'>Projects</a></li>
-        <li><a href='#blog'>Blog</a></li>
-        <li><a href='#contact'>Contact</a></li>
-    </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
     <section id="home">
-        <div class="home-content">
-            <h1>Hi! I'm Chanikya</h1>
-            <h2>Full stack Web Developer</h2>
-            <p>Committed to creating web experiences that everyone can access.</p>
-            <div class="btn-box">
-                <a href="#" onclick="window.open('chanikya resume.pdf')">Download My CV</a>
-                <a href="mailto:chanikyadurgavaraprasadgunturu@gmail.com?subject=I would like to work with you...">Hire Me</a>
+        <div class="edges">
+            <div class="home-content">
+                <h2>Hi! I'm Chanikya <br> Full Stack Web Developer</h2>
+                <p>Committed to creating web experiences that everyone can access.</p>
+                <div class="contactform-socials">
+                    <a href="https://github.com/chanikya2004/chanikya2004" aria-label="GitHub"><img
+                            src="images/WhatsApp.svg.webp" alt=""></a>
+                    <a href="" aria-label="LinkedIn"><img src="images/instagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/chanikya6133/" aria-label="Instagram"><img
+                            src="images/linkedin.png" alt=""></a>
+                </div>
+                <div class="btn-box">
+                    <a href="chanikya_resume.pdf" download>Download My CV</a>
+                    <a href="mailto:chanikyadurgavaraprasadgunturu@gmail.com?subject=I would like to work with you...">Hire
+                        Me</a>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="images/chanikya.jpeg" alt="Chanikya's Avatar">
             </div>
         </div>
-        <div class="avatar">
-            <img src="./assests/anthony-avatar.png" alt="avatar of Anthony Odumodu" class="avatar-img">
-        </div>
     </section>
+
     <section id="about">
         <h2 class="title">About <span class="aboutme">Me</span></h2>
         <div class="about-text">
-            Hi there, welcome to my space on the internet.
-            My name is Chanikya. I’m a passionate and enthusiastic full-end developer.
-            I love coding and limitless possibilities it offers.
-            I am pursuing degree in Computer Science and Engineering. I enjoy utilising web technologies to create seamless, user
-            experiences.
-            I like working on passion projects that spark creativity but also challenge me to think outside the box.
-            Embracing new challenges is something I relish, and I am always eager to learn and stay up to date with
-            current trends in web development.
-            You can explore my work on my projects page. As a neurodivergent developer, I am committed to building
-            inclusive and accessible digital spaces,
-            I believe the web should be a place where everyone can engage meaningfully, and I use my unique perspective
-            to make this vision a reality.
-            I’m open to discussing potential projects, collaborating on exciting ideas or simply just connecting.
-            Whenever I’m not coding you’ll find me watching Cricket or Movies.
+            <p> Hi there, welcome to my space on the internet.
+                My name is Chanikya. I'm a passionate and enthusiastic full-end developer.
+                I love coding and limitless possibilities it offers.
+                I am pursuing degree in Computer Science and Engineering. I enjoy utilising web technologies to create
+                seamless, user
+                experiences.
+                I like working on passion projects that spark creativity but also challenge me to think outside the box.
+                Embracing new challenges is something I relish, and I am always eager to learn and stay up to date with
+                current trends in web development.
+                You can explore my work on my projects page. As a neurodivergent developer, I am committed to building
+                inclusive and accessible digital spaces,
+                I believe the web should be a place where everyone can engage meaningfully, and I use my unique
+                perspective
+                to make this vision a reality.
+                I'm open to discussing potential projects, collaborating on exciting ideas or simply just connecting.
+                Whenever I'm not coding you'll find me watching Cricket or Movies.</p>
         </div>
-        <h2 class="skills">My <span class="aboutme">Skills</span></h2>
-        <div class="skills-list">
-            <h2 class="front-end">Front End & Tools</h2>
+
+
+    </section>
+
+
+    <section>
+        <div class="skills-header">
+            <h2>My <span>Skills</span> <br>Front End &amp; Tools</h2>
+
         </div>
         <div class="flex-list">
-            <div class="sk-text">
-                <img src="images\download.png" alt="HTML Logo" class="html-img">
+            <div>
+                <img src="images/icons8-html-5-96.png" alt="HTML Logo">
                 <h3>HTML</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\css.png" alt="CSS Logo" class="css-img">
+            <div>
+                <img src="images/css.png" alt="CSS Logo">
                 <h3>CSS</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\js.jpeg" alt="Javascript logo" class="javascript-img">
+            <div>
+                <img src="images/javascript.png" alt="Javascript logo">
                 <h3>JAVASCRIPT</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\download.jpeg" alt="Bootsrap Logo" class="bootstrap-img">
+            <div>
+                <img src="images/bootstrap.png" alt="Bootstrap Logo">
                 <h3>BOOTSTRAP</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\download (1).png" alt="Jquery logo" class="jquery-img">
+            <div>
+                <img src="images/jquery.png" alt="Jquery logo">
                 <h3>JQUERY</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\download (2).png" alt="ReactJs logo" class="reactjs-img">
+            <div>
+                <img src="images/react-js.png" alt="ReactJs logo">
                 <h3>REACT JS</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\download (3).png" alt="GitHub Logo" class="github-img">
+            <div>
+                <img src="images/github.png" alt="GitHub Logo">
                 <h3>GITHUB</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\download (4).png" alt="Git logo" class="git-img">
+            <div>
+                <img src="images/git.png" alt="Git logo">
                 <h3>GIT</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\download (5).png" alt="Figma logo" class="figma-img">
+            <div>
+                <img src="images/figma.png" alt="Figma logo">
                 <h3>FIGMA</h3>
             </div>
-            <div class="sk-text">
-                <img src="images\download (1).jpeg" alt="Chrome web logo" class="chrome-img">
+            <div>
+                <img src="images/chrome.png" alt="Chrome DevTools logo">
                 <h3>CHROME DEV</h3>
             </div>
         </div>
     </section>
+
+
     <section id="projects">
         <h2 class="title">My <span class="aboutme">Projects</span></h2>
         <div class="projects-container">
@@ -124,9 +144,9 @@
                 <h2 class="project-title">Portfolio V1</h2>
                 <p class="project-description">My portfolio website that I created using HTML, CSS and JavaScript</p>
                 <div class="tech-stack">
-                    <img src="images\download.png" alt="HTML logo" class="html-img">
-                    <img src="images\css.png" alt="CSS logo" class="css-img">
-                    <img src="images\js.jpeg" alt="javascript logo" class="javascript-img">
+                    <img src="images/icons8-html-5-96.png" alt="HTML logo" class="html-img">
+                    <img src="images/css.png" alt="CSS logo" class="css-img">
+                    <img src="images/javascript.png" alt="javascript logo" class="javascript-img">
                 </div>
                 <div class="button">
                     <a href="https://github.com/antonodu/html-css-js-portfolio"
@@ -134,13 +154,18 @@
                 </div>
             </div>
             <div class="project-card">
-                <img src="images\download (2).jpeg" alt="Development in progress" class="project-image">
+                <img src="images/—Pngtree—business concept of online shopping_5345089.png" alt="Development in progress"
+                    class="project-image">
                 <h2 class="project-title">E-Commerce site</h2>
                 <p class="project-description">Expected to be completed: APR 2025 - E-Commerce site</p>
                 <div class="tech-stack">
-                    <img src="images\download.png" alt="HTML logo" class="html-img">
-                    <img src="images\css.png" alt="CSS logo" class="css-img">
-                    <img src="images\js.jpeg" alt="javascript logo" class="javascript-img">
+                    <img src="images/icons8-html-5-96.png" alt="HTML logo" class="html-img">
+                    <img src="images/css.png" alt="CSS logo" class="css-img">
+                    <img src="images/javascript.png" alt="javascript logo" class="javascript-img">
+                </div>
+                <div class="button">
+                    <a href="https://github.com/antonodu/html-css-js-portfolio"
+                        aria-label="View Portfolio Website code on GitHub">View on GitHub</a>
                 </div>
             </div>
             <div class="project-card">
@@ -148,13 +173,21 @@
                 <h2 class="project-title">Development in Progress</h2>
                 <p class="project-description">Expected to be completed: FEB 2025</p>
                 <div class="tech-stack">
-                    <img src="images\download.png" alt="HTML logo" class="html-img">
-                    <img src="images\css.png" alt="CSS logo" class="css-img">
-                    <img src="images\js.jpeg" alt="javascript logo" class="javascript-img">
+                    <img src="images/icons8-html-5-96.png" alt="HTML logo" class="html-img">
+                    <img src="images/css.png" alt="CSS logo" class="css-img">
+                    <img src="images/javascript.png" alt="javascript logo" class="javascript-img">
+                </div>
+                <div class="button">
+                    <a href="https://github.com/antonodu/html-css-js-portfolio"
+                        aria-label="View Portfolio Website code on GitHub">View on GitHub</a>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
     <section id="contact">
         <h2 class="contact-title">Let's Work <span class="aboutme">Together!</span></h2>
         <div class="contactform-box">
@@ -192,18 +225,12 @@
             </form>
         </div>
 
-        <div class="contactform-socials">
-            <a href="https://github.com/chanikya2004/chanikya2004" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-            <a href="" aria-label="LinkedIn"><i
-                    class='bx bxl-linkedin'></i></a>
-            <a href="https://www.instagram.com/chanikya6133/" aria-label="Instagram"><i
-                    class='bx bxl-instagram'></i></a>
-        </div>
-        
+
+
 
     </section>
-    <footer class="contact-footer"> 
-        Copyright © 2024 | All Rights Reserved.
+    <footer class="contact-footer">
+        Copyright © 2025 | All Rights Reserved.
     </footer>
     <script src="script.js"></script>
 </body>
