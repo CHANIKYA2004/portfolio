@@ -132,7 +132,7 @@ a {
     border-radius: 50%;
     border: 8px solid #82FF50;
     object-fit: cover;
-    
+
 }
 
 .skills-header h2 {
@@ -143,7 +143,7 @@ a {
     width: 35px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 970px) {
     .nav-menu {
         position: absolute;
         left: -115%;
@@ -168,11 +168,6 @@ a {
         margin: 2%;
         padding: 10px;
         text-align: center;
-    }
-
-    .edges {
-        display: flex;
-        flex-direction: column-reverse;
     }
 
     .nav-link {
@@ -204,6 +199,16 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .edges {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .projects-container {
         display: flex;
         justify-content: space-evenly;
@@ -211,9 +216,7 @@ a {
         flex-direction: column;
         align-items: center;
     }
-
 }
-
 
 
 
@@ -223,7 +226,6 @@ a {
     display: flex;
     justify-content: space-between;
     width: 503px;
-    height: 17px;
     z-index: -1;
 }
 
@@ -404,6 +406,7 @@ h4 {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    margin: 20px;
     top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -488,7 +491,6 @@ h4 {
     font-size: 3rem;
     position: relative;
     top: 20px;
-    right: 60px;
 }
 
 .contactform-heading {
@@ -535,7 +537,6 @@ h4 {
     width: 40px;
     height: 40px;
     background: transparent;
-
     border-radius: 50%;
     font-size: 1.25rem;
     color: #82ff50;
@@ -549,7 +550,7 @@ form {
     width: 400px;
     position: relative;
     left: 70px;
-    padding: 2rem;
+    margin: 2rem;
 }
 
 label {
@@ -560,7 +561,7 @@ label {
 
 input,
 textarea {
-    width: 100%;
+    width: -webkit-fill-available;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -597,11 +598,16 @@ button:hover {
 }
 
 .contact-footer {
-    position: relative;
-    top: 50px;
+    text-align: center;
+    padding: 20px 0 10px 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1060px) {
+    .contactform-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .contact-title {
         justify-content: center;
         font-size: 30px;
@@ -621,11 +627,6 @@ button:hover {
         padding: 20px;
     }
 
-    .contactform-box {
-        flex-direction: column;
-        align-items: center;
-    }
-
     form {
         width: 90%;
         left: 0;
@@ -642,6 +643,10 @@ button:hover {
         width: 35px;
         height: 35px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+
 
     .avatar {
         max-width: 295px;
@@ -671,6 +676,7 @@ button:hover {
         position: relative;
         display: flex;
         height: 145px;
+        width: auto;
         row-gap: 15px;
         z-index: -1;
         flex-direction: column;
