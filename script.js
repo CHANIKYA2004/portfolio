@@ -20,9 +20,10 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-windows.addEventListener('resize', function () {
-    const menu = document.getElementById('hamburger');
-    const hamburger = document.getElementById('menu');
+window.addEventListener('resize', function () {
+    const menu = document.querySelector('.hamburger'); // Use class instead of ID
+    const hamburger = document.querySelector('.nav-menu'); // Update based on actual structure
+
 
     if (window.innerWidth > 768) {
         hamburger.style.display = 'none';
