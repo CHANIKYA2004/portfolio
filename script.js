@@ -1,47 +1,40 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
+  // Toggle mobile menu
+  hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
-}
+    hamburger.classList.toggle("active");
+  });
 
-
-// when we click on hamburger icon its close 
-
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
-
-window.addEventListener('resize', function () {
-    const menu = document.querySelector('.hamburger'); // Use class instead of ID
-    const hamburger = document.querySelector('.nav-menu'); // Update based on actual structure
-
-
-    if (window.innerWidth > 768) {
-        hamburger.style.display = 'none';
-        menu.style.width = '0';
-    } else {
-        hamburger.style.display = 'block'
-    }
-    document.querySelector('form').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const form = event.target;
-        const successMessage = document.getElementById('success-message');
-
-        form.reset();
-        successMessage.hidden = false;
+  // Close menu when a nav link is clicked
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) =>
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
     })
+  );
 
+  // Hide menu on larger screens
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+      navMenu.classList.remove("active"); // Hide menu on desktop
+      hamburger.classList.remove("active"); // Ensure the hamburger isn't active
+    }
+  });
 
+  // Form submission success message
+  const form = document.querySelector("form");
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const successMessage = document.getElementById("success-message");
+      form.reset();
+      if (successMessage) {
+        successMessage.hidden = false;
+      }
+    });
+  }
 });
-
-window.dispatchEvent(new Event('resize'))
