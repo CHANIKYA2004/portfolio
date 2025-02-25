@@ -51,7 +51,7 @@ a {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 25px;
     font-weight: 400;
     color: #fff;
 }
@@ -88,11 +88,15 @@ a {
 }
 
 .home-content h2 {
-    font-size: 24px;
+    font-size: 30px;
     color: #ffffff;
     margin-bottom: 10px;
 }
-
+@media screen and ( max-width:550px) {
+    .home-content h2 {
+        font-size: 24px;
+    }
+}
 .home-content p {
     font-size: 16px;
     color: #ffffff;
@@ -115,7 +119,7 @@ a {
 }
 
 .btn-box a:hover {
-    background: #0056b3;
+    background: #82ff50;
 }
 
 .avatar {
@@ -143,7 +147,7 @@ a {
     width: 35px;
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 875px) {
     .nav-menu {
         position: absolute;
         left: -115%;
@@ -151,7 +155,8 @@ a {
         flex-direction: column;
         background-color: #081b29;
         width: 100%;
-        z-index: 1;
+        z-index: 2;
+        padding: 0;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -226,7 +231,6 @@ a {
     display: flex;
     justify-content: space-between;
     width: 503px;
-    z-index: -1;
 }
 
 .btn-box::before {
@@ -238,7 +242,7 @@ a {
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.9s;
+    animation-delay: 0;
     z-index: 2;
 }
 
@@ -396,7 +400,6 @@ h4 {
 .projects-container {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 70px;
 }
 
 .project-card {
@@ -573,7 +576,8 @@ button {
     padding: 0.75rem 1.5rem;
     background-color: #82ff50;
     color: white;
-    border: none;
+    border: none;    
+    font-size: 15px;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -599,7 +603,7 @@ button:hover {
 
 .contact-footer {
     text-align: center;
-    padding: 20px 0 10px 0;
+    padding: 40px 0 10px 0;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -623,7 +627,7 @@ button:hover {
         top: 0px;
         left: 0;
         font-size: 1rem;
-        max-width: 500px;
+        max-width: 600px;
         padding: 20px;
     }
 
@@ -678,7 +682,6 @@ button:hover {
         height: 145px;
         width: auto;
         row-gap: 15px;
-        z-index: -1;
         flex-direction: column;
         align-items: center;
     }
