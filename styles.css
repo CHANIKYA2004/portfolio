@@ -520,7 +520,7 @@ h4 {
 
 .contactform-box {
     display: flex;
-    justify-content: flex-start
+   justify-content: center;
 }
 
 .contactform-socials {
